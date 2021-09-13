@@ -1,0 +1,10 @@
+Personen = int(input('Met hoeveel mensen gaan jullie naar de speelhal? '))
+EntreeP = float(input('Hoe duur is het dagje uit per persoon? '))
+Vip_VrP = int(input('Hoeveel mensen gaan er in de VIP-VR Gameseat? '))
+Tijd = int(input('Hoeveel minuten gaan jullie in de VIP-VR Gameseat? '))
+PrijsPP = float(input('Hoe duur is het per persoon per 5 minuten, voor de VIP-VR Gameseat? '))
+
+Entree = float(Personen * EntreeP)
+Vip_VRP = float(Vip_VrP * Tijd * PrijsPP)
+Total = float(Entree + Vip_VRP)
+print(Total)

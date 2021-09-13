@@ -1,0 +1,13 @@
+CroissantA = int(input('Hoeveel croissantjes heb je nodig? '))
+CroissantP = float(input('Hoeveel kost een croissantjes per stuk?  '))
+StokbroodA = int(input('Hoeveel stokbroden heb je nodig? '))
+StokbroodP = float(input('Hoeveel kost een stokbrood per stuk? '))
+Kortingsbonnen = int(input('Hoeveel kortingsbonnen heb je? '))
+kortingsBON = float(input('Wat is de waarde van de kortingsbonnen? '))
+
+Kortingsbon = float(kortingsBON * Kortingsbonnen)
+CroissantPT = float(CroissantA * CroissantP)
+StokbroodPT = float(StokbroodA * StokbroodP)
+Stokbrood_Croissant = float(StokbroodPT + CroissantPT)
+Totaal = float(Stokbrood_Croissant - Kortingsbon)
+print(Totaal)
